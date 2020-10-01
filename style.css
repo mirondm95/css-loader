@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.loader {
+	width: 200px;
+	height: 200px;
+	position: relative;
+}
+.circle1 {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: calc(50% - 50px);
+	left: calc(50% - 50px);
+	fill: none;
+	stroke:#741f99 ;
+	stroke-width: 7px;
+	stroke-linecap:round;
+	stroke-dasharray: 290;
+	stroke-dashoffset: 290;
+	animation: circle 2s 0.5s infinite cubic-bezier(.19,0.2,.1,0.1); 
+}
+@keyframes circle {
+	100% {stroke-dashoffset: 0;}
+}
+
+.circle2 {
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	top: calc(50% - 70px);
+	left: calc(50% - 70px);
+	fill: none;
+	stroke:#f50057;
+	stroke-width: 7px;
+	stroke-linecap:round;
+	stroke-dasharray: 410;
+	stroke-dashoffset: 410;
+	animation: circle 2s infinite cubic-bezier(.19,0.2,.1,0.1); 
+}
+
+.circle3 {
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	top: calc(50% - 90px);
+	left: calc(50% - 90px);
+	fill: none;
+	stroke:#304ffe;
+	stroke-width: 7px;
+	stroke-linecap:round;
+	stroke-dasharray: 535;
+	stroke-dashoffset: 535;
+	animation: circle 2s 1s infinite cubic-bezier(.19,0.2,.1,0.1); 
+}
